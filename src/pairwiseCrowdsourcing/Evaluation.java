@@ -926,8 +926,7 @@ public class Evaluation {
 	public static void TestBookData(int loop, Object.Model model) throws IOException{
 		Evaluation evaluation = new Evaluation();
 		String filename = "./input/BX-Book-Ratings.csv";
-//		String resultFile = "./output/result_Book_Oct24_SPR_ChangingReference16.csv";
-		String resultFile = "./output/result_Book_May27_SPR_ChangingReference16.csv";
+		String resultFile = "./result_Book_May27_SPR_ChangingReference16.csv";
 		FileOutputStream fostream = new FileOutputStream(resultFile);
 		PrintStream outprint = new PrintStream(fostream);
 		evaluation.ReadBookData(filename);
@@ -1044,7 +1043,7 @@ public class Evaluation {
 	public static void TestMovieData(int loop) throws IOException {
 		Evaluation evaluation = new Evaluation();
 		String filename = "./input/moive.txt";
-		String resultFile = "./output/result_Movie_May27_SPR_ChangingReference16.csv";
+		String resultFile = "./result_Movie_May27_SPR_ChangingReference16.csv";
 		FileOutputStream fostream = new FileOutputStream(resultFile);
 		PrintStream outprint = new PrintStream(fostream);
 		// set popularity threshold to filter movies (otherwise someone may complain the dataset is too large and sparse...)
